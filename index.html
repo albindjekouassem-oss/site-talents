@@ -111,6 +111,68 @@
     <footer id="contact">
         <div class="footer-content">
             <h3>Contactez l'Atelier</h3>
+           <!-- Section Prise de Rendez-vous WhatsApp -->
+<section id="rendezvous" class="appointment-section">
+    <div class="card-content">
+        <h2>Prendre Rendez-vous à l'Atelier</h2>
+        <p class="section-desc">Planifiez votre visite pour vos mesures ou vos commandes personnalisées.</p>
+        
+        <form id="form-rdv" onsubmit="envoyerRdv(event)">
+            <div class="form-group">
+                <label for="nom">Votre Nom complet :</label>
+                <input type="text" id="nom" required placeholder="Ex: Jean Dupont">
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Date souhaitée :</label>
+                <input type="date" id="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="heure">Heure souhaitée :</label>
+                <input type="time" id="heure" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="type-service">Type de prestation :</label>
+                <select id="type-service" required>
+                    <option value="Couture sur mesure">Couture sur mesure (Homme/Femme)</option>
+                    <option value="Tunique ou Ensemble">Tunique ou Ensemble</option>
+                    <option value="Retouche">Retouche ou Réparation</option>
+                    <option value="Autre">Autre demande</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn-submit"><i class="fab fa-whatsapp"></i> Valider mon rendez-vous</button>
+        </form>
+    </div>
+</section>
+
+<!-- Script pour envoyer automatiquement vers WhatsApp -->
+<script>
+function envoyerRdv(event) {
+    event.preventDefault();
+    
+    // Récupération des données du formulaire
+    const nom = document.getElementById('nom').value;
+    const date = document.getElementById('date').value;
+    const heure = document.getElementById('heure').value;
+    const service = document.getElementById('type-service').value;
+    
+    // Numéro de l'atelier
+    const numeroWhatsApp = "23561218182";
+    
+    // Construction du message texte
+    const message = `Bonjour Talents Cachés, je souhaite prendre un rendez-vous.%0A%0A` +
+                    `*Nom :* ${nom}%0A` +
+                    `*Date :* ${date}%0A` +
+                    `*Heure :* ${heure}%0A` +
+                    `*Service :* ${service}`;
+    
+    // Ouverture de WhatsApp
+    window.open(`https://wa.me{numeroWhatsApp}?text=${message}`, '_blank');
+}
+</script>
             <p><i class="fas fa-map-marker-alt"></i> Yatelim Sud, Pala, Tchad</p>
             <p><i class="fas fa-phone-alt"></i> +235 61 21 81 82</p>
             <p><i class="fas fa-envelope"></i> albindjekouassem@gmail.com</p>
