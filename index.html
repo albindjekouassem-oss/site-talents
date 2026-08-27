@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talents Cachés - Atelier de Couture à Pala</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#services">Nos Services</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100075935376329&sk=photos" target="_blank"><i class="fab fa-facebook"></i> Réalisations</a></li>
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Réalisations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -38,10 +38,10 @@
             <p>Situé à Pala au Tchad, notre atelier donne vie à toutes vos envies vestimentaires. Spécialisés dans la haute couture homme et femme, nous mettons notre savoir-faire au service de votre style.</p>
             <p class="motto">"Votre satisfaction, notre priorité"</p>
             <div class="actions-buttons">
-                <a href="https://wa.me/23561218182" class="btn-whatsapp" target="_blank">
+                <a href="https://wa.me" class="btn-whatsapp" target="_blank">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100075935376329&sk=photos" class="btn-facebook" target="_blank">
+                <a href="https://facebook.com" class="btn-facebook" target="_blank">
                     <i class="fab fa-facebook"></i> Notre Galerie Facebook
                 </a>
             </div>
@@ -55,7 +55,7 @@
             <p class="section-desc">Cliquez sur une prestation pour découvrir nos modèles et créations directement sur Facebook.</p>
             <div class="services-grid">
                 
-                <a href="https://www.facebook.com/profile.php?id=100075935376329&sk=photos" class="service-item-link" target="_blank">
+                <a href="https://facebook.com" class="service-item-link" target="_blank">
                     <div class="service-item">
                         <i class="fas fa-cut"></i>
                         <h3>Couture Homme & Femme</h3>
@@ -63,7 +63,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=100075935376329&sk=photos" class="service-item-link" target="_blank">
+                <a href="https://facebook.com" class="service-item-link" target="_blank">
                     <div class="service-item">
                         <i class="fas fa-tshirt"></i>
                         <h3>Tuniques et Ensembles</h3>
@@ -71,7 +71,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=100075935376329&sk=photos" class="service-item-link" target="_blank">
+                <a href="https://facebook.com" class="service-item-link" target="_blank">
                     <div class="service-item">
                         <i class="fas fa-tape"></i>
                         <h3>Vêtements sur Mesure</h3>
@@ -79,7 +79,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=100075935376329&sk=photos" class="service-item-link" target="_blank">
+                <a href="https://facebook.com" class="service-item-link" target="_blank">
                     <div class="service-item">
                         <i class="fas fa-scroll"></i>
                         <h3>Pagnes & Tissus Africains</h3>
@@ -87,7 +87,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=100075935376329&sk=photos" class="service-item-link" target="_blank">
+                <a href="https://facebook.com" class="service-item-link" target="_blank">
                     <div class="service-item">
                         <i class="fas fa-needle"></i>
                         <h3>Retouches & Réparations</h3>
@@ -95,7 +95,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=100075935376329&sk=photos" class="service-item-link" target="_blank">
+                <a href="https://facebook.com" class="service-item-link" target="_blank">
                     <div class="service-item">
                         <i class="fas fa-lightbulb"></i>
                         <h3>Créations Personnalisées</h3>
@@ -107,65 +107,73 @@
         </div>
     </section>
 
+    <!-- Section Prise de Rendez-vous WhatsApp -->
+    <section id="rendezvous" class="appointment-section">
+        <div class="card-content">
+            <h2>Prendre Rendez-vous à l'Atelier</h2>
+            <p class="section-desc">Planifiez votre visite pour vos mesures ou vos commandes personnalisées.</p>
+            
+            <form id="form-rdv" onsubmit="envoyerRdv(event)">
+                <div class="form-group">
+                    <label for="nom">Votre Nom complet :</label>
+                    <input type="text" id="nom" required placeholder="Ex: Jean Dupont">
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Date souhaitée :</label>
+                    <input type="date" id="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="heure">Heure souhaitée :</label>
+                    <input type="time" id="heure" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="type-service">Type de prestation :</label>
+                    <select id="type-service" required>
+                        <option value="Couture sur mesure">Couture sur mesure (Homme/Femme)</option>
+                        <option value="Tunique ou Ensemble">Tunique ou Ensemble</option>
+                        <option value="Retouche">Retouche ou Réparation</option>
+                        <option value="Autre">Autre demande</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn-submit"><i class="fab fa-whatsapp"></i> Valider mon rendez-vous</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Pied de page -->
     <footer id="contact">
         <div class="footer-content">
             <h3>Contactez l'Atelier</h3>
-           <!-- Section Prise de Rendez-vous WhatsApp -->
-<section id="rendezvous" class="appointment-section">
-    <div class="card-content">
-        <h2>Prendre Rendez-vous à l'Atelier</h2>
-        <p class="section-desc">Planifiez votre visite pour vos mesures ou vos commandes personnalisées.</p>
-        
-        <form id="form-rdv" onsubmit="envoyerRdv(event)">
-            <div class="form-group">
-                <label for="nom">Votre Nom complet :</label>
-                <input type="text" id="nom" required placeholder="Ex: Jean Dupont">
-            </div>
-            
-            <div class="form-group">
-                <label for="date">Date souhaitée :</label>
-                <input type="date" id="date" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="heure">Heure souhaitée :</label>
-                <input type="time" id="heure" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="type-service">Type de prestation :</label>
-                <select id="type-service" required>
-                    <option value="Couture sur mesure">Couture sur mesure (Homme/Femme)</option>
-                    <option value="Tunique ou Ensemble">Tunique ou Ensemble</option>
-                    <option value="Retouche">Retouche ou Réparation</option>
-                    <option value="Autre">Autre demande</option>
-                </select>
-            </div>
-            
-            <button type="submit" class="btn-submit"><i class="fab fa-whatsapp"></i> Valider mon rendez-vous</button>
-        </form>
-    </div>
-</section>
+            <p><i class="fas fa-map-marker-alt"></i> Yatelim Sud, Pala, Tchad</p>
+            <p><i class="fas fa-phone-alt"></i> +235 61 21 81 82</p>
+            <p><i class="fas fa-envelope"></i> albindjekouassem@gmail.com</p>
+            <p class="credits">&copy; 2026 Talents Cachés. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-<!-- Script pour envoyer automatiquement vers WhatsApp -->
-<script>
-function envoyerRdv(event) {
-    event.preventDefault();
-    
-    const nom = document.getElementById('nom').value;
-    const date = document.getElementById('date').value;
-    const heure = document.getElementById('heure').value;
-    const service = document.getElementById('type-service').value;
-    
-    const numeroWhatsApp = "23561218182";
-    
-    const message = `Bonjour Talents Cachés, je souhaite prendre un rendez-vous.%0A%0A` +
-                    `*Nom :* ${nom}%0A` +
-                    `*Date :* ${date}%0A` +
-                    `*Heure :* ${heure}%0A` +
-                    `*Service :* ${service}`;
-    
-   window.open(`https://wa.me{numeroWhatsApp}?text=${message}`, '_blank');
-}
-</script>
+    <!-- Script de redirection sans variables fragiles -->
+    <script>
+    function envoyerRdv(event) {
+        event.preventDefault();
+        
+        var vNom = document.getElementById('nom').value;
+        var vDate = document.getElementById('date').value;
+        var vHeure = document.getElementById('heure').value;
+        var vService = document.getElementById('type-service').value;
+        
+        var txtMessage = "Bonjour Talents Caches, je souhaite prendre un rendez-vous.%0A%0A" +
+                         "Nom : " + vNom + "%0A" +
+                         "Date : " + vDate + "%0A" +
+                         "Heure : " + vHeure + "%0A" +
+                         "Service : " + vService;
+        
+        window.open("https://wa.me?text=" + txtMessage, "_blank");
+    }
+    </script>
+
+</body>
+</html>
