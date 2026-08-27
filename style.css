@@ -263,3 +263,76 @@ footer i {
         margin: 20px 10px;
     }
 }
+/* ==========================================
+   STYLES DU FORMULAIRE DE RENDEZ-VOUS 
+========================================== */
+
+.appointment-section {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Alignement des groupes de champs */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style des étiquettes de texte (ex: Votre Nom) */
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #0d3b66; /* Bleu Royal */
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+/* Style des zones de saisie et de sélection */
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Animation et coloration dorée quand on clique dans un champ */
+.form-group input:focus, 
+.form-group select:focus {
+    outline: none;
+    border-color: #d4af37; /* Couleur Or */
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Magnifique bouton vert WhatsApp centré */
+.btn-submit {
+    display: inline-block;
+    background-color: #25d366; /* Vert officiel WhatsApp */
+    color: white;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+}
+
+/* Effet au survol du bouton */
+.btn-submit:hover {
+    transform: scale(1.03);
+    background-color: #20ba5a;
+}
+
+.btn-submit i {
+    margin-right: 8px;
+}
