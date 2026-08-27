@@ -153,32 +153,19 @@
 function envoyerRdv(event) {
     event.preventDefault();
     
-    // Récupération des données du formulaire
     const nom = document.getElementById('nom').value;
     const date = document.getElementById('date').value;
     const heure = document.getElementById('heure').value;
     const service = document.getElementById('type-service').value;
     
-    // Numéro de l'atelier
     const numeroWhatsApp = "23561218182";
     
-    // Construction du message texte
     const message = `Bonjour Talents Cachés, je souhaite prendre un rendez-vous.%0A%0A` +
                     `*Nom :* ${nom}%0A` +
                     `*Date :* ${date}%0A` +
                     `*Heure :* ${heure}%0A` +
                     `*Service :* ${service}`;
     
-    // Ouverture de WhatsApp
     window.open(`https://wa.me{numeroWhatsApp}?text=${message}`, '_blank');
 }
 </script>
-            <p><i class="fas fa-map-marker-alt"></i> Yatelim Sud, Pala, Tchad</p>
-            <p><i class="fas fa-phone-alt"></i> +235 61 21 81 82</p>
-            <p><i class="fas fa-envelope"></i> albindjekouassem@gmail.com</p>
-            <p class="credits">&copy; 2026 Talents Cachés. Tous droits réservés.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
