@@ -1,179 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talents Cachés - Atelier de Couture à Pala</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cloudflare.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Talents Cachés - Atelier de couture à Pala, Tchad.">
+<meta name="theme-color" content="#0d3b66">
+<title>Talents Cachés - Atelier de Couture à Pala</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+  <div class="logo-area">
+    <img src="logo.png" alt="Logo Talents Cachés" class="site-logo">
+    <div>
+      <h1>Talents Cachés</h1>
+      <p class="slogan">Style, Élégance et Originalité !</p>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#services">Nos Services</a></li>
+      <li><a href="#rendezvous">Rendez-vous</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <div class="site-bg"></div>
+<main>
+<section id="accueil" class="hero-section">
+  <div class="card-content">
+    <h2>Bienvenue chez Talents Cachés</h2>
+    <p class="manager">Responsable : <strong>Djekouassem Albin</strong></p>
+    <p>Situé à Pala au Tchad, notre atelier donne vie à toutes vos envies vestimentaires. Spécialisés dans la couture homme et femme, nous mettons notre savoir-faire au service de votre style.</p>
+    <p class="motto">« Votre satisfaction, notre priorité »</p>
+    <div class="actions-buttons">
+      <a href="https://wa.me/23561218182" class="btn-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://facebook.com" class="btn-facebook" target="_blank" rel="noopener">Notre Galerie Facebook</a>
+    </div>
+  </div>
+</section>
 
-    <!-- En-tête / Navigation -->
-    <header>
-        <div class="logo-area">
-            <img src="logo.png" alt="Logo Talents Cachés" class="site-logo">
-            <div>
-                <h1>Talents Cachés</h1>
-                <p class="slogan">Style, Élégance et Originalité !</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#services">Nos Services</a></li>
-                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Réalisations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<section id="services" class="services-section">
+  <div class="card-content">
+    <h2>Nos Prestations</h2>
+    <p class="section-desc">Découvrez nos différentes prestations et créations.</p>
+    <div class="services-grid">
+      <a href="https://facebook.com" class="service-item-link" target="_blank" rel="noopener"><div class="service-item"><div class="service-icon">✂</div><h3>Couture Homme & Femme</h3><span class="fb-action-text">Voir les modèles →</span></div></a>
+      <a href="https://facebook.com" class="service-item-link" target="_blank" rel="noopener"><div class="service-item"><div class="service-icon">👕</div><h3>Tuniques et Ensembles</h3><span class="fb-action-text">Voir les modèles →</span></div></a>
+      <a href="https://facebook.com" class="service-item-link" target="_blank" rel="noopener"><div class="service-item"><div class="service-icon">📏</div><h3>Vêtements sur Mesure</h3><span class="fb-action-text">Découvrir →</span></div></a>
+      <a href="https://facebook.com" class="service-item-link" target="_blank" rel="noopener"><div class="service-item"><div class="service-icon">🧵</div><h3>Pagnes & Tissus Africains</h3><span class="fb-action-text">Voir nos tissus →</span></div></a>
+      <a href="https://facebook.com" class="service-item-link" target="_blank" rel="noopener"><div class="service-item"><div class="service-icon">🪡</div><h3>Retouches & Réparations</h3><span class="fb-action-text">En savoir plus →</span></div></a>
+      <a href="https://facebook.com" class="service-item-link" target="_blank" rel="noopener"><div class="service-item"><div class="service-icon">💡</div><h3>Créations Personnalisées</h3><span class="fb-action-text">Galerie photos →</span></div></a>
+    </div>
+  </div>
+</section>
 
-    <!-- Section Accueil -->
-    <section id="accueil" class="hero-section">
-        <div class="card-content">
-            <h2>Bienvenue chez Talents Cachés</h2>
-            <p class="manager">Responsable : <strong>Djekouassem Albin</strong></p>
-            <p>Situé à Pala au Tchad, notre atelier donne vie à toutes vos envies vestimentaires. Spécialisés dans la haute couture homme et femme, nous mettons notre savoir-faire au service de votre style.</p>
-            <p class="motto">"Votre satisfaction, notre priorité"</p>
-            <div class="actions-buttons">
-                <a href="https://wa.me" class="btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
-                <a href="https://facebook.com" class="btn-facebook" target="_blank">
-                    <i class="fab fa-facebook"></i> Notre Galerie Facebook
-                </a>
-            </div>
-        </div>
-    </section>
+<section id="rendezvous" class="appointment-section">
+  <div class="card-content">
+    <h2>Prendre Rendez-vous à l'Atelier</h2>
+    <p class="section-desc">Planifiez votre visite pour vos mesures ou vos commandes personnalisées.</p>
+    <form id="form-rdv">
+      <div class="form-group"><label for="nom">Votre Nom complet :</label><input type="text" id="nom" required autocomplete="name" placeholder="Ex : Jean Dupont"></div>
+      <div class="form-group"><label for="date">Date souhaitée :</label><input type="date" id="date" required></div>
+      <div class="form-group"><label for="heure">Heure souhaitée :</label><input type="time" id="heure" required></div>
+      <div class="form-group"><label for="type-service">Type de prestation :</label>
+        <select id="type-service" required>
+          <option value="Couture sur mesure">Couture sur mesure (Homme/Femme)</option>
+          <option value="Tunique ou Ensemble">Tunique ou Ensemble</option>
+          <option value="Retouche">Retouche ou Réparation</option>
+          <option value="Autre">Autre demande</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-submit">Valider mon rendez-vous sur WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
 
-    <!-- Section Services liés à Facebook -->
-    <section id="services" class="services-section">
-        <div class="card-content">
-            <h2>Nos Prestations</h2>
-            <p class="section-desc">Cliquez sur une prestation pour découvrir nos modèles et créations directement sur Facebook.</p>
-            <div class="services-grid">
-                
-                <a href="https://facebook.com" class="service-item-link" target="_blank">
-                    <div class="service-item">
-                        <i class="fas fa-cut"></i>
-                        <h3>Couture Homme & Femme</h3>
-                        <span class="fb-action-text"><i class="fab fa-facebook"></i> Voir les modèles</span>
-                    </div>
-                </a>
+<footer id="contact">
+  <div class="footer-content">
+    <h3>Contactez l'Atelier</h3>
+    <p>📍 Yatelim Sud, Pala, Tchad</p>
+    <p>📞 <a href="tel:+23561218182">+235 61 21 81 82</a></p>
+    <p>✉️ <a href="mailto:albindjekouassem@gmail.com">albindjekouassem@gmail.com</a></p>
+    <p class="credits">© 2026 Talents Cachés. Tous droits réservés.</p>
+  </div>
+</footer>
 
-                <a href="https://facebook.com" class="service-item-link" target="_blank">
-                    <div class="service-item">
-                        <i class="fas fa-tshirt"></i>
-                        <h3>Tuniques et Ensembles</h3>
-                        <span class="fb-action-text"><i class="fab fa-facebook"></i> Voir les modèles</span>
-                    </div>
-                </a>
-
-                <a href="https://facebook.com" class="service-item-link" target="_blank">
-                    <div class="service-item">
-                        <i class="fas fa-tape"></i>
-                        <h3>Vêtements sur Mesure</h3>
-                        <span class="fb-action-text"><i class="fab fa-facebook"></i> Découvrir</span>
-                    </div>
-                </a>
-
-                <a href="https://facebook.com" class="service-item-link" target="_blank">
-                    <div class="service-item">
-                        <i class="fas fa-scroll"></i>
-                        <h3>Pagnes & Tissus Africains</h3>
-                        <span class="fb-action-text"><i class="fab fa-facebook"></i> Voir nos tissus</span>
-                    </div>
-                </a>
-
-                <a href="https://facebook.com" class="service-item-link" target="_blank">
-                    <div class="service-item">
-                        <i class="fas fa-needle"></i>
-                        <h3>Retouches & Réparations</h3>
-                        <span class="fb-action-text"><i class="fab fa-facebook"></i> En savoir plus</span>
-                    </div>
-                </a>
-
-                <a href="https://facebook.com" class="service-item-link" target="_blank">
-                    <div class="service-item">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Créations Personnalisées</h3>
-                        <span class="fb-action-text"><i class="fab fa-facebook"></i> Galerie photos</span>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Prise de Rendez-vous WhatsApp -->
-    <section id="rendezvous" class="appointment-section">
-        <div class="card-content">
-            <h2>Prendre Rendez-vous à l'Atelier</h2>
-            <p class="section-desc">Planifiez votre visite pour vos mesures ou vos commandes personnalisées.</p>
-            
-            <form id="form-rdv" onsubmit="envoyerRdv(event)">
-                <div class="form-group">
-                    <label for="nom">Votre Nom complet :</label>
-                    <input type="text" id="nom" required placeholder="Ex: Jean Dupont">
-                </div>
-                
-                <div class="form-group">
-                    <label for="date">Date souhaitée :</label>
-                    <input type="date" id="date" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="heure">Heure souhaitée :</label>
-                    <input type="time" id="heure" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="type-service">Type de prestation :</label>
-                    <select id="type-service" required>
-                        <option value="Couture sur mesure">Couture sur mesure (Homme/Femme)</option>
-                        <option value="Tunique ou Ensemble">Tunique ou Ensemble</option>
-                        <option value="Retouche">Retouche ou Réparation</option>
-                        <option value="Autre">Autre demande</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="btn-submit"><i class="fab fa-whatsapp"></i> Valider mon rendez-vous</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Pied de page -->
-    <footer id="contact">
-        <div class="footer-content">
-            <h3>Contactez l'Atelier</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Yatelim Sud, Pala, Tchad</p>
-            <p><i class="fas fa-phone-alt"></i> +235 61 21 81 82</p>
-            <p><i class="fas fa-envelope"></i> albindjekouassem@gmail.com</p>
-            <p class="credits">&copy; 2026 Talents Cachés. Tous droits réservés.</p>
-        </div>
-    </footer>
-
-    <!-- Script de redirection sans variables fragiles -->
-    <script>
-    function envoyerRdv(event) {
-        event.preventDefault();
-        
-        var vNom = document.getElementById('nom').value;
-        var vDate = document.getElementById('date').value;
-        var vHeure = document.getElementById('heure').value;
-        var vService = document.getElementById('type-service').value;
-        
-        var txtMessage = "Bonjour Talents Caches, je souhaite prendre un rendez-vous.%0A%0A" +
-                         "Nom : " + vNom + "%0A" +
-                         "Date : " + vDate + "%0A" +
-                         "Heure : " + vHeure + "%0A" +
-                         "Service : " + vService;
-        
-        window.open("https://wa.me?text=" + txtMessage, "_blank");
-    }
-    </script>
-
+<script>
+document.getElementById("form-rdv").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const nom = document.getElementById("nom").value.trim();
+  const date = document.getElementById("date").value;
+  const heure = document.getElementById("heure").value;
+  const service = document.getElementById("type-service").value;
+  const message = "Bonjour Talents Cachés,\n\nJe souhaite prendre un rendez-vous.\n\nNom : " + nom +
+    "\nDate : " + date + "\nHeure : " + heure + "\nService : " + service;
+  window.location.href = "https://wa.me/23561218182?text=" + encodeURIComponent(message);
+});
+</script>
 </body>
-</html>
+          </html>
